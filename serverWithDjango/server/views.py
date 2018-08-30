@@ -1,8 +1,8 @@
 
-from django.http import HttpResponse
+from django.http import render
 
 
 def index(request):
-    return HttpResponse("Hello, World!")
+    return render(request,"Hello, World!")
 
 # Create your views here.

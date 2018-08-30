@@ -1,8 +1,8 @@
 
-from django.http import render
+from django.shortcuts import render
 
 
 def index(request):
-    return render(request,"Hello, World!")
+    return render(request,'server/temperature.html')
 
 # Create your views here.

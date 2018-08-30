@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Вход</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="assets/css/login-page.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+<script type="text/javascript" src="assets/d3/d3.min.js"></script>
+<script type="text/javascript" src="assets/js/login.js"></script>
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form class="login-form">
+                <input type="text" id="name1" placeholder="Название подстанции" required="true" pattern="[А-Я][А-Яа-я' -]+" />
+                <input type="text" id="name2" placeholder="Трансформатор" required="true" pattern="[A-Z][A-Z' -]+[0-9' -]+"/>
+                <input type="password" id="pass1" placeholder="Код доступа" onchange="pass(this)" required='true' pattern="[0-9' -]+"/>
+                <a id="link" href="first.html"><button>Вход</button></a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
